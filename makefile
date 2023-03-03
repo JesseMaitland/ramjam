@@ -33,7 +33,7 @@ format:                ## Run black python linter
 	python -m black ${PROJECT_DIR} ${TEST_DIR}
 
 .PHONY: check-format
-check-format:          ## Run black linter to check formatting of project files
+lint:          ## Run black linter to check formatting of project files
 	python -m black --check ${PROJECT_DIR} ${TEST_DIR}
 
 .PHONY: test
