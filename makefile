@@ -29,7 +29,7 @@ install:               ## Install project locally in development mode - without 
 
 .PHONY: install-dev
 install-dev:           ## Install project locally in development mode - with dev tools
-	. venv/bin/activate && pip install -e ".[dev]"
+	pip install -e ".[dev]"
 
 
 .PHONY: install-docs
@@ -55,12 +55,12 @@ format:                ## Run black python linter
 
 .PHONY: check-format
 check-format:          ## Run black linter to check formatting of project files
-	. venv/bin/activate && python -m black --check ${PROJECT_DIR} ${TEST_DIR}
+	python -m black --check ${PROJECT_DIR} ${TEST_DIR}
 
 
 .PHONY: test
 test:                  ## Run project tests using pytest
-	. venv/bin/activate && python -m pytest ${TEST_DIR} -p no:warnings -s
+	python -m pytest ${TEST_DIR} -p no:warnings -s
 
 
 .PHONY: sort-imports
