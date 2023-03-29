@@ -42,3 +42,4 @@ profile = "black"
 
 [tool.setuptools.packages.find]
 exclude = ["tests*"]
+
