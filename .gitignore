@@ -55,3 +55,6 @@ coverage.xml
 .pytest_cache/
 
 pyvenv.cfg
+site
+venv
+docs
