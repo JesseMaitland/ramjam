@@ -1,5 +1,9 @@
 <!--next-version-placeholder-->
 
+## v0.2.0 (2023-04-05)
+### Feature
+* **command:** Allow ignoring of some commands by name ([`0277662`](https://github.com/JesseMaitland/ramjam/commit/0277662bbf4b178af40bac70f5595fa43cb7ce68))
+
 ## v0.1.0 (2023-03-29)
 ### Feature
 * **release:** Change env name ([`5938593`](https://github.com/JesseMaitland/ramjam/commit/59385936b992766d553cc21395c9021148ce661f))
