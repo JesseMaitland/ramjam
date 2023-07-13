@@ -1,5 +1,9 @@
 <!--next-version-placeholder-->
 
+## v0.3.0 (2023-07-13)
+### Feature
+* **python:** Relax to python 3.9 ([`a302409`](https://github.com/JesseMaitland/ramjam/commit/a30240920c401272a8aad880bc240990b63277f8))
+
 ## v0.2.0 (2023-04-05)
 ### Feature
 * **command:** Allow ignoring of some commands by name ([`0277662`](https://github.com/JesseMaitland/ramjam/commit/0277662bbf4b178af40bac70f5595fa43cb7ce68))
