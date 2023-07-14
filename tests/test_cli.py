@@ -14,8 +14,10 @@ def test_call():
     class MyCommand(Command):
         pass
 
-    with pytest.raises(TypeError):
-        MyCommand(Namespace())  # Cannot instantiate abstract class
+    command_instance = MyCommand(Namespace())
+
+    with pytest.raises(NotImplementedError):
+        command_instance()  # Call the command instance, it should raise NotImplementedError
 
 
 def test_args():
@@ -30,6 +32,16 @@ def test_help():
         help = "Some help"
 
     assert MyCommand.help == "Some help"
+
+
+def test_multiple_inheritance():
+    class MyCommand(Command):
+        args = {"--foo": {"help": "Foo help"}}
+
+    class MyOtherCommand(MyCommand):
+        args = {"--bar": {"help": "Bar help"}}
+
+    assert MyOtherCommand.args == {"--foo": {"help": "Foo help"}, "--bar": {"help": "Bar help"}}
 
 
 def test_cli():
