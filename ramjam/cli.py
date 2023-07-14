@@ -10,11 +10,11 @@ class ArgsMetaclass(type):
         # Merging 'args' dictionaries of parent classes and the new class
         new_args = {}
         for base in reversed(bases):
-            if hasattr(base, 'args'):
+            if hasattr(base, "args"):
                 new_args.update(base.args)
-        if 'args' in attrs:
-            new_args.update(attrs['args'])
-        attrs['args'] = new_args
+        if "args" in attrs:
+            new_args.update(attrs["args"])
+        attrs["args"] = new_args
 
         return super().__new__(mcs, name, bases, attrs)
 
