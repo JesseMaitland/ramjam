@@ -1,5 +1,5 @@
 # ramjam
-####  -- VERSION 0.3.0 --
+####  -- VERSION 0.4.0 --
 
 This package provides some simple classes for creating a quick and dirty CLI application. It uses pure python and breaks up
 CLI entrypoints into classes. 

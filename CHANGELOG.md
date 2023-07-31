@@ -1,5 +1,10 @@
 <!--next-version-placeholder-->
 
+## v0.4.0 (2023-07-14)
+### Feature
+* **command:** Add metaclass to allow for inheritence of parent args ([`9b4eece`](https://github.com/JesseMaitland/ramjam/commit/9b4eece5fed2e39ed86afb18ca02100a87bc0d7e))
+* **command:** Add metaclass to allow for inheritence of parent args ([`fb0d1bc`](https://github.com/JesseMaitland/ramjam/commit/fb0d1bce892610c93dc6643ef676e192a1c40539))
+
 ## v0.3.0 (2023-07-13)
 ### Feature
 * **python:** Relax to python 3.9 ([`a302409`](https://github.com/JesseMaitland/ramjam/commit/a30240920c401272a8aad880bc240990b63277f8))
